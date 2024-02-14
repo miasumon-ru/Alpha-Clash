@@ -1,11 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alpha Clash <Prog></Prog></title>
+    <title>Alpha Clash Pro</title>
+    <!-- external css link -->
+
+    <link rel="stylesheet" href="./styles/style.css">
+
+    <!-- Daisy UI and Tailwind necessary links -->
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+
+
+
 </head>
+
 <body>
-    
+
+    <!-- border-2 border-white -->
+
+    <header>
+
+    </header>
+    <main class="bg-black min-h-screen bg-[url(./images/background.png)] bg-no-repeat bg-center">
+
+        <!-- home section -->
+
+        <section id="home-section" class="flex justify-center min-h-screen items-center  ">
+
+            <div class=" text-center space-y-8 p-5">
+                <h1 class="font-anton text-white text-9xl">ALPHABET CLASH</h1>
+                <p class="text-white text-2xl">Unleash Your Keyboard Kung Fu : Press “Enter” to Play</p>
+                <button onclick="play()" class="btn font-extrabold">Play Now</button>
+            </div>
+
+            
+
+        </section>
+
+        <!-- playground section-->
+
+        <section id="playground-section" class="flex flex-col justify-center items-center min-h-screen space-y-10 hidden  ">
+            <!-- screen -->
+            <div class=" border-[16px] border-[#010313CC] artboard artboard-horizontal phone-6 bg-[#FFFFFFB3] mt-10"> 
+
+                <div class="flex justify-center">
+                    <p class="bg-[#2F2941] text-white max-w-96 p-2 rounded-b-lg">Don't watch keyboard  while playing...</p>
+                </div>
+                
+                <div class=" mt-5">
+                    <p class="text-9xl  text-center p-5">Y</p>
+                </div>
+            
+            </div>
+           
+            <!-- keyboard -->
+            <div class=" p-5">
+                <div class="flex justify-center gap-1 my-1 w-full">
+                    <kbd class="kbd">q</kbd>
+                    <kbd class="kbd">w</kbd>
+                    <kbd class="kbd">e</kbd>
+                    <kbd class="kbd">r</kbd>
+                    <kbd class="kbd">t</kbd>
+                    <kbd class="kbd">y</kbd>
+                    <kbd class="kbd">u</kbd>
+                    <kbd class="kbd">i</kbd>
+                    <kbd class="kbd">o</kbd>
+                    <kbd class="kbd">p</kbd>
+                  </div> 
+                  <div class="flex justify-center gap-1 my-1 w-full">
+                    <kbd class="kbd">a</kbd>
+                    <kbd class="kbd">s</kbd>
+                    <kbd class="kbd">d</kbd>
+                    <kbd class="kbd">f</kbd>
+                    <kbd class="kbd">g</kbd>
+                    <kbd class="kbd">h</kbd>
+                    <kbd class="kbd">j</kbd>
+                    <kbd class="kbd">k</kbd>
+                    <kbd class="kbd">l</kbd>
+                  </div> 
+                  <div class="flex justify-center gap-1 my-1 w-full">
+                    <kbd class="kbd">z</kbd>
+                    <kbd class="kbd">x</kbd>
+                    <kbd class="kbd">c</kbd>
+                    <kbd class="kbd">v</kbd>
+                    <kbd class="kbd">b</kbd>
+                    <kbd class="kbd">n</kbd>
+                    <kbd class="kbd">m</kbd>
+                    <kbd class="kbd">/</kbd>
+                  </div>
+            </div>
+            <!-- score -->
+            <div class=" w-full">
+                <div class="flex justify-between px-20 py-5">
+                    <button class=" bg-[#894189] hover:bg-orange-400 flex  items-center btn text-white rounded-full">Life <img class="w-6" src="./images/heart.png" alt=""> 1 </button>
+                    <button class=" bg-[#360490] hover:bg-orange-600 flex items-center btn text-white rounded-full">Score <img src="./images/dollar.png" alt=""></button>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- score and life section -->
+
+        <section class="score and life border-2 flex justify-center items-center min-h-screen hidden">
+
+            <div class=" text-white font-poppins bg-[#FFFFFF12] p-5 text-center space-y-5 rounded-lg">
+                <h1 class="text-7xl  font-extrabold">Score : 14</h1>
+                <button class="btn font-semibold">Play Again</button>
+                <p class="">Practice will make you Pro</p>
+            </div>
+
+        </section>
+    </main>
+
+    <script src="./scripts/alpha-clash.js"></script>
 </body>
+
 </html>
