@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme = "light">
 
 <head>
     <meta charset="UTF-8">
@@ -31,7 +31,7 @@
 
         <!-- home section -->
 
-        <section id="home-section" class="flex justify-center min-h-screen items-center  ">
+        <section id="home-section" class="flex justify-center min-h-screen items-center ">
 
             <div class=" text-center space-y-8 p-5">
                 <h1 class="font-anton text-white text-9xl">ALPHABET CLASH</h1>
@@ -98,8 +98,12 @@
             <!-- score -->
             <div class=" w-full">
                 <div class="flex justify-between px-20 py-5">
-                    <button class=" bg-[#894189] hover:bg-orange-400 flex  items-center btn text-white rounded-full">Life <img class="w-6" src="./images/heart.png" alt=""> 1 </button>
-                    <button class=" bg-[#360490] hover:bg-orange-600 flex items-center btn text-white rounded-full">Score <img src="./images/dollar.png" alt=""></button>
+                    <!-- life -->
+                    <button id="" class=" bg-[#894189] hover:bg-orange-400 flex  items-center btn text-white rounded-full">Life <img class="w-6" src="./images/heart.png" alt=""> <span id="current-life"> 5 </span> </button>
+
+                    <!-- score -->
+
+                    <button class=" bg-[#360490] hover:bg-orange-600 flex items-center btn text-white rounded-full">Score <img src="./images/dollar.png" alt=""> <span id="current-score">0</span></button>
                 </div>
             </div>
 
@@ -107,11 +111,12 @@
 
         <!-- score and life section -->
 
-        <section class="score and life border-2 flex justify-center items-center min-h-screen hidden">
+        <section id="score-section" class="score and life border-2 flex justify-center items-center min-h-screen hidden">
 
             <div class=" text-white font-poppins bg-[#FFFFFF12] p-5 text-center space-y-5 rounded-lg">
-                <h1 class="text-7xl  font-extrabold">Score : 14</h1>
-                <button class="btn font-semibold">Play Again</button>
+                <h3 class="text-3xl"> Game Over !! </h3>
+                <h1  class="text-7xl  font-extrabold">Score : <span id="final-score">0</span></h1>
+                <button onclick="play()" class="btn font-semibold">Play Again</button>
                 <p class="">Practice will make you Pro</p>
             </div>
 
