@@ -19,18 +19,32 @@ function handleKeyboardKeyup(event) {
     const playerPressed = event.key;
     console.log('player pressed', playerPressed);
 
-    // game over if pressed Escape
+       
 
-    if(playerPressed === 'Escape'){
-        gameOver();
-    }
+  
 
     // current alphabet
 
     const currentAlphabet = document.getElementById('show-alphabet');
 
     const expectedAlphabet = currentAlphabet.innerText.toLowerCase();
-    console.log('expected alphabet is', expectedAlphabet);
+
+    // game over if pressed Escape
+
+    if(playerPressed === 'Escape'){
+
+        const lastAlphabet = expectedAlphabet;
+        console.log(lastAlphabet)
+        removeBackgroundColorById(lastAlphabet);
+
+        gameOver();
+
+                   
+       
+    }
+    
+
+   
 
 
     if (playerPressed === expectedAlphabet) {
